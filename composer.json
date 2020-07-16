@@ -1,0 +1,36 @@
+{
+    "name": "vrnvgasu/localization",
+    "description": "The simple button for localization changing.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitrii Shitikov",
+            "email": "shitikovdm@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "^7.20",
+        "illuminate/http": "^7.20",
+        "illuminate/routing": "^7.20",
+        "symfony/http-foundation": "^5.1",
+        "illuminate/database": "^7.20",
+        "illuminate/container": "^7.20"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vrnvgasu\\Localization\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vrnvgasu\\Localization\\Providers\\LocalizationProvider"
+            ]
+        }
+    }
+}
